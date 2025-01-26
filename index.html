@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuickShuttle Service</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- EmailJS Script -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+      emailjs.init("YOUR_USER_ID"); // Replace with your EmailJS User ID
+    })();
+  </script>
+</head>
+<body>
+  <header>
+    <nav>
+        <div class="logo">
+            <img src="images/quickshuttle-logo.webp" alt="QuickShuttle Logo" class="logo-img">
+      <div class="hamburger" id="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#booking">Book Now</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h1>Welcome to QuickShuttle Service</h1>
+    <p>Your reliable and fast shuttle service provider.</p>
+    <a href="tel:+27728753925" class="btn">Call Us: +27728753925</a>
+    <a href="#booking" class="btn">Book Now</a>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="service-list">
+      <div class="service-item">
+        <h3>Airport Transfers</h3>
+        <p>Fast and reliable airport shuttle services.</p>
+      </div>
+      <div class="service-item">
+        <h3>Corporate Shuttles</h3>
+        <p>Efficient transportation for business professionals.</p>
+      </div>
+      <div class="service-item">
+        <h3>Private Hire</h3>
+        <p>Customized shuttle services for private events.</p>
+      </div>
+    </div>
+    <p class="service-info">
+      Our shuttles travel from <strong>Johannesburg, Sandton, OR Tambo, Pretoria, Rosebank</strong>, or from any <strong>B & B, Guesthouse, Hotel</strong>, and even <strong>private residences</strong>.
+      <br><br>
+      <strong>QUICK SHUTTLE</strong> travels to all Game Reserves and Game Lodges across South Africa.
+    </p>
+  </section>
+
+  <!-- Booking Form Section -->
+  <section id="booking">
+    <h2>Book Your Shuttle</h2>
+    <form id="booking-form">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+      </div>
+      <div class="form-group">
+        <label for="pickup">Pickup Location</label>
+        <input type="text" id="pickup" name="pickup" placeholder="Enter pickup location" required>
+      </div>
+      <div class="form-group">
+        <label for="destination">Destination</label>
+        <select id="destination" name="destination" required>
+          <option value="" disabled selected>Select your destination</option>
+          <option value="Hoedspruit">Hoedspruit</option>
+          <option value="Madikwe Game Reserve">Madikwe Game Reserve</option>
+          <option value="Pilanesberg Game Reserve">Pilanesberg Game Reserve</option>
+          <option value="Welgevonden Game Reserve">Welgevonden Game Reserve</option>
+          <option value="Marloth Park">Marloth Park</option>
+          <option value="Marataba Safari Lodge">Marataba Safari Lodge</option>
+          <option value="Saabi Sands Shuttle">Saabi Sands Shuttle</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="date">Pickup Date</label>
+        <input type="date" id="date" name="date" required>
+      </div>
+      <div class="form-group">
+        <label for="time">Pickup Time</label>
+        <input type="time" id="time" name="time" required>
+      </div>
+      <div class="form-group">
+        <label for="passengers">Number of Passengers</label>
+        <input type="number" id="passengers" name="passengers" min="1" max="20" required>
+      </div>
+      <button type="submit" class="btn">Submit Booking</button>
+    </form>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>QuickShuttle Service is a trusted shuttle provider with years of experience in delivering fast, reliable, and comfortable transportation solutions. Whether you need airport transfers, corporate shuttles, or private hire, we’ve got you covered.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Have questions or need assistance? Reach out to us!</p>
+    <div class="contact-info">
+      <p><strong>Phone:</strong> <a href="tel:+27728753925">+27728753925</a></p>
+      <p><strong>Email:</strong> <a href="mailto:info@quickshuttle.co.za">info@quickshuttle.co.za</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 QuickShuttle Service. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
